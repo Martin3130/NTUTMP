@@ -3,11 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>NTUT ACTL LAB</title>
+  <style>
+    .header-container {
+        display: flex;
+        justify-content: center; /* 置中排列 */
+        gap: 50px; /* 兩個標題中間的間距 */
+        margin-top: 50px;
+    }
+    .header-container a h1 {
+        font-size: 28px;
+        color: darkblue;
+        text-decoration: none;
+        border-bottom: 2px solid darkblue;
+        padding: 10px;
+        transition: 0.3s;
+    }
+    .header-container a h1:hover {
+        color: orangered;
+        border-color: orangered;
+    }
+  </style>
 </head>
 <body>
+  <div class="header-container"></div>
     <!-- 第一個大標題，連到 page1.html -->
     <a href="page1.html" target="_blank">
       <h1>研究生</h1>
+      <p>大家好，我叫林祐詮，目前就讀國立台北科技大學 機電整合研究所。</p>
   </a>
 
   <!-- 第二個大標題，連到 page2.html -->
