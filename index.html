@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>NTUT ACTL LAB</title>
-  <style>
-    .header-container {
-        display: flex;
-        justify-content: center; /* 置中排列 */
-        gap: 50px; /* 兩個標題中間的間距 */
-        margin-top: 50px;
-    }
-    .header-container a h1 {
-        font-size: 28px;
-        color: darkblue;
-        text-decoration: none;
-        border-bottom: 2px solid darkblue;
-        padding: 10px;
-        transition: 0.3s;
-    }
-    .header-container a h1:hover {
-        color: orangered;
-        border-color: orangered;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>研究紀錄</title>
+    <style>
+        body {
+            font-family: "微軟正黑體", sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 700px;
+        }
+
+        .year-links {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .year-links a {
+            text-decoration: none;
+            font-size: 24px;
+            color: #2980b9;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .year-links a:hover {
+            border-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-  <div class="header-container"></div>
-    <!-- 第一個大標題，連到 page1.html -->
-    <a href="page1.html" target="_blank">
-      <h1>研究生</h1>
-      <p>大家好，我叫林祐詮，目前就讀國立台北科技大學 機電整合研究所。</p>
-    </a>
+    <h1>研究生</h1>
+    <p>大家好，我叫林祐詮，目前就讀國立台北科技大學機電整合研究所。</p>
 
-    <!-- 第二個大標題，連到 page2.html -->
-    <a href="page2.html" target="_blank">
-      <h1>碩一</h1>
-    </a>
-
-    <!-- 第三個大標題，連到 page3.html -->
-    <a href="page3.html" target="_blank">
-      <h1>碩二</h1>
-    </a>
-  </div>
+    <div class="year-links">
+        <a href="page1.html" target="_blank">碩一</a>
+        <a href="page2.html" target="_blank">碩二</a>
+    </div>
 </body>
 </html>
